@@ -1,18 +1,27 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
+gem 'rake'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+# database
 gem 'pg'
 
+# views
+gem 'tophat'
 
-# Gems used only for assets and not required
-# in production environments by default.
+# authentication
+gem 'devise'
+gem 'cancan'
+
+# queues/automation
+gem 'sidekiq'
+gem 'whenever'
+
+# assets
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'compass-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -22,17 +31,37 @@ end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+group :development do
+  gem 'quiet_assets'
+end
 
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
+group :test, :development do
+  gem 'rspec-rails'
+end
 
-# Use unicorn as the app server
-# gem 'unicorn'
+group :test do
+  # cucumber
+  gem 'cucumber-rails', :require => false
+  gem 'capybara-puma'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+  gem 'launchy'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+  # guards
+  gem 'guard-cucumber'
+  gem 'guard-rspec'
+  gem 'guard-puma'
+  gem 'guard-spin'
+  gem "guard-bundler"
+  gem 'rb-fsevent'
+  gem 'growl'
 
-# To use debugger
-# gem 'debugger'
+  # factories/data
+  gem 'factory_girl_rails'
+  gem 'factory_girl'
+  gem 'shoulda'
+  gem 'forgery'
+  gem 'timecop'
+
+  gem 'simplecov'
+end
