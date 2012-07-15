@@ -5,6 +5,7 @@ gem 'rake'
 
 # database
 gem 'pg'
+gem "seedbank"
 
 # views
 gem 'tophat'
