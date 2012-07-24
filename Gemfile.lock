@@ -262,7 +262,7 @@ GEM
     thor (0.15.4)
     tilt (1.3.3)
     timecop (0.3.5)
-    tophat (1.6.1)
+    tophat (1.7.0)
       actionpack (>= 3.0.0)
     treetop (1.4.10)
       polyglot
