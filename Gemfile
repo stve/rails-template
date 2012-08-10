@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8.rc1'
+gem 'rails', '3.2.8'
 gem 'rake'
 
 # database
