@@ -1,10 +1,9 @@
-
 guard 'bundler' do
   watch('Gemfile')
   watch('Gemfile.lock')
 end
 
-guard 'cucumber' do
+guard 'cucumber', :cli => '--require features/support --require features/step_definitions' do
   watch(%r{^features/.+\.feature$})
   watch(%r{^features/support/.+$})                        { 'features' }
   watch(%r{^features/step_definitions/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'features' }
@@ -21,6 +20,8 @@ guard 'puma' do
 end
 
 guard 'spin' do
+  # uses the .rspec file
+  # --colour --fail-fast --format documentation --tag ~sl
   watch('spec/spec_helper.rb')                            { "spec" }
   watch(%r{^spec/support/.*$})                            { "spec" }
   watch(%r{^spec/.+_spec\.rb$})
@@ -33,6 +34,19 @@ guard 'spin' do
   watch(%r{^app/controllers/(.+)_(controller)\.rb$})      { |m| ["spec/routing/#{m[1]}_routing_spec.rb", "spec/#{m[2]}s/#{m[1]}_#{m[2]}_spec.rb", "spec/requests/#{m[1]}_spec.rb"] }
 end
 
+=======
+  # uses the .rspec file
+  # --colour --fail-fast --format documentation --tag ~slow
+  watch('spec/spec_helper.rb')                        { "spec" }
+  watch(%r{^spec/.+_spec\.rb$})
+  watch(%r{^spec/support/.*$})
+  watch(%r{^app/(.+)\.rb$})                           { |m| "spec/#{m[1]}_spec.rb" }
+  watch(%r{^lib/(.+)\.rb$})                           { |m| "spec/lib/#{m[1]}_spec.rb" }
+  watch('app/controllers/application_controller.rb')  { "spec/controllers" }
+  watch(%r{^app/controllers/(.+)_(controller)\.rb$})  { |m| ["spec/routing/#{m[1]}_routing_spec.rb", "spec/#{m[2]}s/#{m[1]}_#{m[2]}_spec.rb", "spec/requests/#{m[1]}_spec.rb"] }
+
+end
+
 ### Guard::Sidekiq
 #  available options:
 #  - :verbose
@@ -43,3 +57,4 @@ end
 guard 'sidekiq', :environment => 'development' do
   watch(%r{^workers/(.+)\.rb$})
 end
+
