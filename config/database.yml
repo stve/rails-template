@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: rails-template_development
+  database: rails_template_development
   pool: 5
-  username: rails-template
+  username: rails_template
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: rails-template_test
+  database: rails_template_test
   pool: 5
-  username: rails-template
+  username: rails_template
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: rails-template_production
+  database: rails_template_production
   pool: 5
-  username: rails-template
+  username: rails_template
   password:
