@@ -31,4 +31,5 @@ Everyone has their preferred stack, this is mine:
   * `config/initializers/session_store.rb`
   * `config/initializers/secret_token.rb`
   * `config/routes.rb`
+  * `spec/spec_helper.rb`
 3. Generate a new session secret by running `rake secret`
