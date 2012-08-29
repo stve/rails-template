@@ -73,5 +73,5 @@ group :test do
   gem 'forgery'
   gem 'timecop'
 
-  gem 'simplecov'
+  gem 'simplecov', :require => false
 end
