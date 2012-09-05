@@ -47,6 +47,7 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'dotenv'
+  gem 'konacha'
 end
 
 group :test do
@@ -63,6 +64,7 @@ group :test do
   gem 'guard-puma'
   gem 'guard-spin'
   gem "guard-bundler"
+  gem 'guard-konacha'
   gem 'rb-fsevent'
   gem 'growl'
 
