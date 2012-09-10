@@ -1,7 +1,8 @@
-Konacha.configure do |config|
+if defined?(Konacha)
   require 'capybara/poltergeist'
-
-  config.spec_dir    = "spec/javascripts"
-  config.driver      = :poltergeist
-  config.stylesheets = %w(application)
-end if defined?(Konacha)
+  Konacha.configure do |config|
+    config.spec_dir    = "spec/javascripts"
+    config.driver      = :poltergeist
+    config.stylesheets = %w(application)
+  end
+end
