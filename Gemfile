@@ -9,6 +9,7 @@ gem "seedbank"
 
 # views
 gem 'tophat'
+gem 'simple_form'
 
 # authentication
 gem 'devise'

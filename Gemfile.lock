@@ -260,6 +260,9 @@ GEM
       multi_json (~> 1)
       redis (~> 3)
       redis-namespace
+    simple_form (2.0.2)
+      actionpack (~> 3.0)
+      activemodel (~> 3.0)
     simplecov (0.6.4)
       multi_json (~> 1.0)
       simplecov-html (~> 0.5.3)
@@ -331,6 +334,7 @@ DEPENDENCIES
   seedbank
   shoulda
   sidekiq
+  simple_form
   simplecov
   timecop
   tophat
