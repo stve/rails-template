@@ -161,6 +161,9 @@ GEM
     libwebsocket (0.1.5)
       addressable
     listen (0.5.0)
+    lograge (0.0.6)
+      actionpack
+      activesupport
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -317,6 +320,7 @@ DEPENDENCIES
   konacha
   launchy
   letter_opener
+  lograge
   newrelic_rpm
   pg
   poltergeist

@@ -19,6 +19,9 @@ gem 'cancan'
 gem 'sidekiq'
 gem 'whenever'
 
+# misc
+gem 'lograge'
+
 # assets
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
