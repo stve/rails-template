@@ -21,6 +21,7 @@ gem 'whenever'
 
 # misc
 gem 'lograge'
+gem 'active_model_serializers'
 
 # assets
 group :assets do
