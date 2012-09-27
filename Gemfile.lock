@@ -66,6 +66,7 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 2.0)
       xpath (~> 0.1.4)
+    capybara-email (0.1.2)
     capybara-puma (1.0.0)
       capybara
       puma
@@ -324,6 +325,7 @@ DEPENDENCIES
   airbrake
   brakeman
   cancan
+  capybara-email
   capybara-puma
   coffee-rails (~> 3.2.1)
   compass-rails
