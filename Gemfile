@@ -58,6 +58,7 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'dotenv'
   gem 'konacha'
+  gem 'guard-sidekiq'
 end
 
 group :test do

@@ -32,3 +32,14 @@ guard 'spin' do
   watch('app/controllers/application_controller.rb')      { "spec/controllers" }
   watch(%r{^app/controllers/(.+)_(controller)\.rb$})      { |m| ["spec/routing/#{m[1]}_routing_spec.rb", "spec/#{m[2]}s/#{m[1]}_#{m[2]}_spec.rb", "spec/requests/#{m[1]}_spec.rb"] }
 end
+
+### Guard::Sidekiq
+#  available options:
+#  - :verbose
+#  - :queue (defaults to "default")
+#  - :concurrency (defaults to 1)
+#  - :timeout
+#  - :environment (corresponds to RAILS_ENV for the Sidekiq worker)
+guard 'sidekiq', :environment => 'development' do
+  watch(%r{^workers/(.+)\.rb$})
+end
