@@ -7,6 +7,12 @@ gem 'rake'
 gem 'pg'
 gem "seedbank"
 
+# models
+gem 'friendly_id'
+gem 'active_model_serializers'
+gem 'activevalidators'
+gem 'activemodel-warnings'
+
 # views
 gem 'tophat'
 gem 'simple_form'
@@ -21,7 +27,6 @@ gem 'whenever'
 
 # misc
 gem 'lograge'
-gem 'active_model_serializers'
 
 # assets
 group :assets do
