@@ -1,0 +1,51 @@
+#!/bin/sh
+#
+# bootstrap
+#
+# Setup all dependencies for this app.
+
+set -e
+
+#
+# Check for Bundler
+#
+if test ! $(which bundle)
+then
+  echo "  x You need to install Bundler:"
+  echo "    gem install bundler"
+  exit
+else
+  echo "  + Bundler found."
+fi
+
+#
+# Check for Redis
+#
+if test ! $(which redis-server)
+then
+  echo "  x You need to install Redis. If you use Homebrew, you can run:"
+  echo "    brew install redis"
+  exit
+else
+  echo "  + Redis found."
+fi
+
+#
+# Check for PhantomJS
+#
+if test ! $(which phantomjs)
+then
+  echo "  x You need to install PhantomJS. If you use Homebrew, you can run:"
+  echo "    brew install phantomjs"
+  exit
+else
+  echo "  + PhantomJS found."
+fi
+
+#
+# Install gems
+#
+echo "  + Bootstrapping Ruby Environment."
+bundle check > /dev/null 2>&1 || bundle install "$@"
+
+echo "  Good work. All systems are a go."
