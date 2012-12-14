@@ -60,8 +60,6 @@ group :test, :development do
 end
 
 group :test do
-  # cucumber
-  gem 'cucumber-rails', :require => false
   gem 'capybara-puma'
   gem 'capybara-email'
   gem 'poltergeist'

@@ -14,11 +14,10 @@ Everyone has their preferred stack, this is mine:
 ## Testing
 
 * RSpec
-* Cucumber
-* Guard
-* Poltergeist
 * Capybara
+* Poltergeist
 * FactoryGirl
+* Guard
 
 ## Setup
 
