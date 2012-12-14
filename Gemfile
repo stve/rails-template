@@ -66,7 +66,6 @@ group :test do
   gem 'launchy'
 
   # guards
-  gem 'guard-rspec'
   gem 'guard-puma'
   gem 'guard-spin'
   gem "guard-bundler"
