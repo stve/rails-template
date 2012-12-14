@@ -44,7 +44,6 @@ gem 'jquery-rails'
 
 group :production do
   gem 'newrelic_rpm'
-  gem 'airbrake'
 end
 
 group :development do
