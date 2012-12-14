@@ -28,6 +28,9 @@ gem 'whenever'
 # misc
 gem 'lograge'
 
+# monitoring
+gem 'newrelic_rpm'
+
 # assets
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -41,10 +44,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
-group :production do
-  gem 'newrelic_rpm'
-end
 
 group :development do
   gem 'quiet_assets'
