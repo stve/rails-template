@@ -167,8 +167,6 @@ GEM
       sprockets
     launchy (2.1.0)
       addressable (~> 2.2.6)
-    letter_opener (0.0.2)
-      launchy
     libnotify (0.7.4)
       ffi (~> 1.0.11)
     libwebsocket (0.1.7.1)
@@ -348,7 +346,6 @@ DEPENDENCIES
   jquery-rails
   konacha
   launchy
-  letter_opener
   lograge
   newrelic_rpm
   pg
