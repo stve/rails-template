@@ -67,7 +67,6 @@ group :test do
   gem 'launchy'
 
   # guards
-  gem 'guard-cucumber'
   gem 'guard-rspec'
   gem 'guard-puma'
   gem 'guard-spin'
@@ -79,7 +78,7 @@ group :test do
   # factories/data
   gem 'factory_girl_rails'
   gem 'factory_girl'
-  gem 'shoulda'
+  gem 'shoulda-matchers'
   gem 'forgery'
   gem 'timecop'
 
