@@ -1,4 +1,14 @@
+require 'sidekiq/web'
+
 RailsTemplate::Application.routes.draw do
+
+  mount MailPreview => 'mail_view' if Rails.env.development?
+
+  admin_constraint = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin? }
+  constraints admin_constraint do
+    mount Sidekiq::Web => '/sidekiq'
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

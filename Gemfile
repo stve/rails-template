@@ -49,6 +49,8 @@ group :development do
   gem 'quiet_assets'
   gem 'brakeman'
   gem 'vendorer'
+  gem 'mailcatcher'
+  gem 'mail_view'
 end
 
 group :test, :development do
