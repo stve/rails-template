@@ -4,11 +4,12 @@ gem 'rails', '3.2.9'
 gem 'rake'
 
 # database
+# gem 'mysql2'
 gem 'pg'
 gem "seedbank"
 
 # models
-gem 'friendly_id'
+# gem 'friendly_id'
 gem 'active_model_serializers'
 gem 'activevalidators'
 gem 'activemodel-warnings'
@@ -29,7 +30,7 @@ gem 'whenever'
 gem 'lograge'
 
 # monitoring
-gem 'newrelic_rpm'
+# gem 'newrelic_rpm'
 
 # assets
 group :assets do
