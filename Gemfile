@@ -24,6 +24,7 @@ gem 'cancan'
 
 # queues/automation
 gem 'sidekiq'
+gem 'slim'
 gem 'whenever'
 
 # misc
