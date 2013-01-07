@@ -2,10 +2,6 @@
 # This file configures the New Relic Agent.  New Relic monitors
 # Ruby, Java, .NET, PHP, and Python applications with deep visibility and low overhead.
 # For more information, visit www.newrelic.com.
-#
-# Generated December 12, 2012
-#
-# This configuration file is custom generated for Tradier Inc
 
 # Here are the settings that are common to all environments:
 common: &default_settings
