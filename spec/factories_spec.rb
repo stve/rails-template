@@ -1,5 +1,6 @@
-# http://robots.thoughtbot.com/post/30994874643/testing-your-factories-first
+require 'spec_helper'
 
+# http://robots.thoughtbot.com/post/30994874643/testing-your-factories-first
 FactoryGirl.factories.map(&:name).each do |factory_name|
   describe "The #{factory_name} factory" do
     it 'is valid' do
