@@ -346,7 +346,6 @@ DEPENDENCIES
   database_cleaner
   devise
   dotenv
-  factory_girl
   factory_girl_rails
   forgery
   growl

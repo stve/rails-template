@@ -60,6 +60,7 @@ group :test, :development do
   gem 'dotenv'
   gem 'konacha'
   gem 'guard-sidekiq'
+  gem 'factory_girl_rails'
 end
 
 group :test do
@@ -78,8 +79,6 @@ group :test do
   gem 'growl'
 
   # factories/data
-  gem 'factory_girl_rails'
-  gem 'factory_girl'
   gem 'shoulda-matchers'
   gem 'forgery'
   gem 'timecop'
