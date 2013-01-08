@@ -382,6 +382,7 @@ DEPENDENCIES
   sidekiq
   simple_form
   simplecov
+  sinatra
   slim
   timecop
   tophat

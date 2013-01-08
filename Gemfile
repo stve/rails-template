@@ -25,6 +25,7 @@ gem 'cancan'
 # queues/automation
 gem 'sidekiq'
 gem 'slim'
+gem 'sinatra', :require => nil
 gem 'whenever'
 
 # misc
