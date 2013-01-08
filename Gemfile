@@ -30,6 +30,7 @@ gem 'whenever'
 
 # misc
 gem 'lograge'
+gem 'mail_view'
 
 # monitoring
 # gem 'newrelic_rpm'
@@ -53,7 +54,6 @@ group :development do
   gem 'brakeman'
   gem 'vendorer'
   gem 'mailcatcher'
-  gem 'mail_view'
 end
 
 group :test, :development do
