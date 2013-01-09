@@ -5,5 +5,3 @@
 require File.expand_path('../config/application', __FILE__)
 
 RailsTemplate::Application.load_tasks
-
-require 'dotenv/tasks'
