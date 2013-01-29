@@ -53,6 +53,8 @@ group :development do
   gem 'brakeman'
   gem 'vendorer'
   gem 'mailcatcher'
+
+  gem 'guard-brakeman'
 end
 
 group :test, :development do
