@@ -54,6 +54,7 @@ group :development do
   gem 'vendorer'
   gem 'mailcatcher'
 
+  gem 'guard-sidekiq'
   gem 'guard-brakeman'
 end
 
@@ -61,7 +62,6 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'dotenv'
   gem 'konacha'
-  gem 'guard-sidekiq'
   gem 'factory_girl_rails'
 end
 
