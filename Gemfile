@@ -53,6 +53,8 @@ group :development do
   gem 'brakeman'
   gem 'vendorer'
   gem 'mailcatcher'
+  gem 'better_errors'
+  gem 'binding_of_caller'
 
   gem 'guard-sidekiq'
   gem 'guard-brakeman'
