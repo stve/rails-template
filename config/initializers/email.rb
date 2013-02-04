@@ -6,6 +6,6 @@ rescue
   catcher = false
 end
 
-ActionMailer::Base.smtp_settings = if Rails.env.development? && catcher
-  { :host => "localhost", :port => '1025' }
+if Rails.env.development? && catcher
+  ActionMailer::Base.smtp_settings = { :host => "localhost", :port => '1025' }
 end
