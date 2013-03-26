@@ -62,9 +62,9 @@ end
 
 group :test, :development do
   gem 'rspec-rails'
-  gem 'dotenv'
   gem 'konacha'
   gem 'factory_girl_rails'
+  gem 'dotenv-rails'
 end
 
 group :test do
