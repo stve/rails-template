@@ -1,18 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails', '4.0.0'
 gem 'rake'
 
 # database
 gem 'mysql2'
 # gem 'pg'
-gem "seedbank"
+# gem "seedbank"
 
 # models
 # gem 'friendly_id'
 gem 'active_model_serializers'
 gem 'activevalidators'
-gem 'activemodel-warnings'
 
 # views
 gem 'tophat'
@@ -24,9 +23,8 @@ gem 'cancan'
 
 # queues/automation
 gem 'sidekiq'
-gem 'slim'
-gem 'sinatra', :require => nil
-gem 'whenever'
+gem 'sinatra', :require => false
+gem 'whenever', :require => false
 
 # misc
 gem 'lograge'
@@ -36,15 +34,9 @@ gem 'mail_view'
 # gem 'newrelic_rpm'
 
 # assets
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'compass-rails'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.0.3'
-end
+gem 'sass-rails'
+gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'uglifier'
 
 gem 'jquery-rails'
 
